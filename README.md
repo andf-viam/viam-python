@@ -9,8 +9,8 @@ Try out the [Python Viam SDK](https://python.viam.dev/) and use code to control 
 1. In a separate browser window, head to [Try Viam](https://app.viam.com/try), start a new session by clicking **Try Now**. If you haven’t already, you will need to [create a new Viam account](https://docs.viam.com/manage/#create-account-and-log-in). Wait for configuring to complete, then click **Try My Rover** when ready.
 1. In the **Control** tab, find the `viam_base` control panel, and enable the `cam` and `overhead-cam:overheadcam` cameras. You should see a live feed from its forward-facing webcam, as well as an external overhead camera.
 1. Next, switch to the **Code sample** tab, and enable the **Include secret** toggle.
-1. Copy the value for `payload` shown in the **Code sample** tab and paste it between the single quotes for `SECRET_FROM_VIAM_APP`  in `drive.py`.
-1. Similarly, copy the robot address within `RobotClient.at_address()` shown in the **Code sample** tab and paste it between the single quotes for `ADDRESS_FROM_VIAM_APP`  in `drive.py`.
+1. Copy the location secret, (the `payload`) shown in the **Code sample** tab and paste it between the single quotes for `SECRET_FROM_VIAM_APP`  in `drive.py`.
+1. Similarly, copy the robot address within `RobotClient.at_address()` shown in the **Code sample** tab and paste it between the single quotes for `ADDRESS_FROM_VIAM_APP`  in `drive.py`. Only copy the hostname, ending with `viam.cloud`.
 1. Return to the Terminal in your GitHub editor window, and run the python code:
 
 ```sh
